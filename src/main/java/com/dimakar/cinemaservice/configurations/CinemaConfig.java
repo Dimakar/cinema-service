@@ -10,11 +10,11 @@ import org.springframework.context.annotation.Configuration;
 public class CinemaConfig {
     @Bean
     public Cinema cinema1(@Qualifier("name1") String name, @Autowired int type) {
-        return new Cinema(type, name, "Stromynka");
+        return new Cinema(type, name, "Stromynka", true);
     }
 
     @Bean
     public Cinema cinema2(@Qualifier("name2") String name, @Autowired int type) {
-        return new Cinema(type, name, "VDNH");
+        return new Cinema(type, name, "VDNH", true);
     }
 }

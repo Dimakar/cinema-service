@@ -1,14 +1,15 @@
 package com.dimakar.cinemaservice.dto;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.ToString;
+import lombok.*;
 
 @AllArgsConstructor
+@NoArgsConstructor
 @ToString
 @Data
+@Builder
 public class Cinema {
-    private final int type;
-    private final String name;
-    private final String address;
+    private Integer id;
+    private String name;
+    private String address;
+    private Boolean isOpen;
 }
